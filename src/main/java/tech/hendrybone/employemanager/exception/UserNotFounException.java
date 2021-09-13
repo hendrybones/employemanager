@@ -1,6 +1,7 @@
 package tech.hendrybone.employemanager.exception;
 
-public class UserNotFounException {
-    public UserNotFounException(String s) {
+public class UserNotFounException extends RuntimeException {
+    public UserNotFounException(String message) {
+        super(message);
     }
 }
